@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    cursor: url(https://cur.cursors-4u.net/food/foo-2/foo165.cur), auto !important;
 }
 
 body{
@@ -20,7 +21,7 @@ body{
 .content-encabezado{
     width: 100%;
     height: 100%;
-    background-color: #555;
+    background-color: #fff;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -28,6 +29,7 @@ body{
 
 .content-logo{
     width: 120px;
+    margin-top: 10px;
 }
 .logo{
     width: 60px;
@@ -38,11 +40,11 @@ body{
 }
 h1{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
+    font-weight: 500;
 }
 .nav{
     min-height: 30%;
-    background-color: #563;
+    background-color: #b03532;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -62,6 +64,9 @@ h1{
 }
 .nav-menu li{
     list-style: none;
+    font-family: 'lato';
+    font-weight: 500;
+    letter-spacing: 0.8;
 }
 .content-search{
     position: relative;
@@ -89,6 +94,9 @@ h1{
     padding-left: 8px;
     color: rgba(10, 10, 10, 0.8);
 }
+.carrito{
+    font-size: 1.8rem;
+}
 
 .lupa:hover {
     cursor: pointer;
@@ -112,7 +120,7 @@ i{
     position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .carrousel{
     width:100%;
@@ -210,10 +218,47 @@ i{
 
 .footer{
     width: 100vw;
-    height: 80px;
-    background-color: #1410fd;
+    height: 100px;
+    background-color: #fff;
     margin-top: 100px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.content-categorias:hover .categorias{
+    display: block;
+    
+}
+
+
+.list-categorias{
+    position: relative;
+   
+}
+.list-categorias:hover{
+    text-shadow: red 1px 1px 1px;
+    transition: .5s;
+}
+.categorias{
+    display: none;
+    width: 130px;
+    height: 100px;
+    background-color: #00863c;
+    z-index: 1;
+    position: absolute;  
+    cursor: pointer; 
+   border-radius: 5px;
+   
+}
+.categorias li {
+    margin-left: 5px;
+}
+.categorias li:hover {
+    text-decoration: underline;
+    
+}
+.arrow{
+    margin-left: 3px;
+    font-size: 0.7rem;
 }
