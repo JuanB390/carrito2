@@ -26,7 +26,10 @@ body{
     justify-content: space-evenly;
     align-items: center;
 }
-
+a{
+    text-decoration: none;
+    color: #000;
+}
 .content-logo{
     width: 120px;
     margin-top: 10px;
@@ -61,6 +64,7 @@ h1{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin: 0 0 0 50px;
 }
 .nav-menu li{
     list-style: none;
@@ -248,8 +252,12 @@ i{
     z-index: 1;
     position: absolute;  
     cursor: pointer; 
-   border-radius: 5px;
+    border-radius: 5px;
    
+}
+.categorias a{
+    text-decoration: none;
+    color: #000;
 }
 .categorias li {
     margin-left: 5px;
@@ -261,4 +269,30 @@ i{
 .arrow{
     margin-left: 3px;
     font-size: 0.7rem;
+}
+.info-producto{
+    font-family: 'lato';
+    font-weight: 500;
+}
+.info-producto h4{
+    margin-left: 3px;
+}
+.info-producto button {
+    width: 80px;
+    height: 25px;
+    border: solid #000 1px;
+    border-radius: 5px;
+    background-color: #00863c;
+    margin:5px 0 0 3px;
+    font-family: 'lato';
+    font-weight: 500;
+}
+.info-producto button:hover{
+    background-color: #b03532;
+    transition: .3s;
+}
+
+.precio{
+    margin:1px 0 0 3px;
+
 }
